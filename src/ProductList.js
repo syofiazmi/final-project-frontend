@@ -26,8 +26,8 @@ const ProductList = () => {
         <div className='container'>
             <h1>ProductList</h1>
             {products.map((product) => (
-                <div>
-                    <img src={product.image} alt={product.name} />
+                <div className='item'>
+                    <img className='image' src={product.image} alt={product.name} />
                     <h4>{product.name}</h4>
                     <p>Price: Rp.{product.price}</p>
                     <p>Description: {product.description}</p>
